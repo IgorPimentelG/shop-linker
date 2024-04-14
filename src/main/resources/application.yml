@@ -3,4 +3,8 @@ spring:
     name: Shop Linker API
   profiles:
     active: dev
-
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none

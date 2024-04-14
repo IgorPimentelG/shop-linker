@@ -1,2 +1,6 @@
 spring:
-  profiles: prod
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/shop_linker?useSSL=false
+    username: ytlPl0Wd8aqrKo3X
+    password: X3XrU3SZBO41XkrF

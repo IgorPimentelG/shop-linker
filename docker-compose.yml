@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres
+    container_name: shop-linker-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: shop_linker
+      POSTGRES_USER: ytlPl0Wd8aqrKo3X
+      POSTGRES_PASSWORD: X3XrU3SZBO41XkrF
+    ports:
+      - '5432:5432'
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
