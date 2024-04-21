@@ -33,10 +33,6 @@ public class Address {
 	@Column(name = "updated_at")
 	private LocalDateTime updatedAt;
 
-	@OneToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "client_id", referencedColumnName = "id")
-	private Client client;
-
 	@PrePersist
 	private void prePersist() {
 		this.createdAt = LocalDateTime.now();
